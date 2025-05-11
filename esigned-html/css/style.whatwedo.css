@@ -1,0 +1,285 @@
+/* CSS */
+/* body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f2f7;
+  } */
+  
+  .courses-section {
+    margin-bottom: 5vw;
+    padding: 60px 20px;
+    background: linear-gradient(145deg, #3a0243, #5a0266);
+    color: #fff;
+    text-align: center;
+  }
+  
+  .courses-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ffd700; /* Gold */
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 5px #00000066;
+  }
+  
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .course-card {
+    background-color: #ffffff;
+    color: #3a0243;
+    border-radius: 16px;
+    padding: 25px 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    border-top: 6px solid #ff69b4; /* Hot Pink */
+  }
+  
+  .course-card:hover {
+    transform: scale(1.05);
+    background-color: #ff69b4;
+    color: #fff;
+    border-top: 6px solid #ffd700; /* Gold */
+  }
+  
+
+
+
+
+  /* CSS */
+/* CSS */
+.what-we-do-elegant {
+    background: #1f0127;
+    color: #f5f1f9;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .what-we-do-elegant .container {
+    max-width: 950px;
+    margin: auto;
+  }
+  
+  .what-we-do-elegant h2 {
+    font-size: 2.8rem;
+    color: #ffd700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+  }
+  
+  .what-we-do-elegant .underline {
+    width: 80px;
+    height: 4px;
+    background: #ff69b4;
+    margin: 0 auto 30px auto;
+    border-radius: 2px;
+    animation: underline-glow 2s infinite alternate;
+  }
+  
+  .what-we-do-elegant p {
+    font-size: 1.2rem;
+    line-height: 2;
+    color: #e9dff1;
+    padding: 0 10px;
+  }
+  
+  .what-we-do-elegant strong {
+    color: #ff69b4;
+    font-size: 1.3rem;
+  }
+  
+  .what-we-do-elegant .highlight {
+    color: #ffd700;
+    font-weight: bold;
+  }
+  
+  .what-we-do-elegant em {
+    color: #ffb6c1;
+    font-style: normal;
+    font-weight: bold;
+  }
+  
+  @keyframes underline-glow {
+    from { box-shadow: 0 0 5px #ff69b4; }
+    to { box-shadow: 0 0 15px #ff69b4; }
+  }
+
+  
+
+
+  
+
+  .why-choose-elite {
+    background: linear-gradient(to right, #3a0243, #1f0122);
+    padding: 80px 20px;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .why-choose-elite .title-box {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .why-choose-elite .title-box h2 {
+    font-size: 2.8rem;
+    color: #ffd700;
+  }
+  
+  .why-choose-elite .title-box h2 span {
+    color: #ff9df5;
+  }
+  
+  .why-choose-elite .title-box p {
+    color: #d9b3ff;
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .card {
+    background-color: #4a0658;
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(255, 192, 255, 0.2);
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(255, 192, 255, 0.3);
+  }
+  
+  .card .icon {
+    font-size: 2.5rem;
+    color: #ffd700;
+    margin-bottom: 15px;
+  }
+  
+  .card h3 {
+    color: #ffb3ec;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+  }
+  
+  .card p {
+    color: #f5e6ff;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  
+  /* تجربة 2 */
+  .course-details-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 24px;
+    margin: 30px auto;
+    max-width: 900px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-left: 6px solid #FF9B17;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .course-details-box:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon-container img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  .text-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #FF9B17;
+  }
+  
+  .text-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  
+
+
+  /* عشان الشهادات */
+  .certifications-section {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .certifications-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .certification-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .certification-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .certification-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .certification-logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    object-fit: contain;
+  }
+  
+  .certification-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .certification-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
