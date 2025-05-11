@@ -98,3 +98,13 @@
         max-width: 1170px;
     }
 }
+
+
+
+@media (max-width: 992px) {
+    .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
+        padding: 0 5px;
+        margin-top: 5vw;
+        margin-left: -65vw;
+    }
+}

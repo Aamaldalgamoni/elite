@@ -127,6 +127,11 @@ body {
 }
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
+  
+
+      padding: 0 5px;
+      margin-top: 5vw;
+      margin-left: -65vw;
   margin: 10px 30px;
   color: #ffffff;
   text-align: center;
@@ -713,3 +718,11 @@ background-image: ;
 
 
 
+
+@media (max-width: 992px) {
+  .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
+      padding: 0 5px;
+      margin-top: 5vw;
+      margin-left: -65vw;
+  }
+}
