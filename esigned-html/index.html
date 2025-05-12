@@ -50,11 +50,60 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
               <ul class="navbar-nav  ">
+                <!-- عنصر الترجمة -->
+<div class="lang-switch-wrapper">
+  <button class="lang-icon-btn" onclick="toggleLangMenu()"  style="background-color: #3a0243;
+    margin-top: 1.2vw;">🌐</button>
+  <ul id="langMenu" class="lang-menu hidden">
+    <li onclick="changeLanguage('en')">🇺🇸 English</li>
+    <li onclick="changeLanguage('ar')">🇸🇦 العربية</li>
+    <li onclick="changeLanguage('fr')">🇫🇷 Français</li>
+  </ul>
+</div>
+
+<!-- Google Translate -->
+<div id="google_translate_element" style="opacity: 0; height: 0; overflow: hidden;"></div>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+  }
+
+  function changeLanguage(lang) {
+    const select = document.querySelector("select.goog-te-combo");
+    if (select) {
+      select.value = lang;
+      select.dispatchEvent(new Event("change"));
+    }
+  }
+
+  function toggleLangMenu() {
+    document.getElementById("langMenu").classList.toggle("hidden");
+  }
+
+  // إغلاق القائمة عند الضغط خارجها
+  document.addEventListener("click", function (e) {
+    const menu = document.getElementById("langMenu");
+    const btn = document.querySelector(".lang-icon-btn");
+    if (!menu.contains(e.target) && !btn.contains(e.target)) {
+      menu.classList.add("hidden");
+    }
+  });
+</script>
+
+<!-- CSS الضروري -->
+<style>
+  .lang-menu.hidden {
+    display: none;
+  }
+</style>
                 <li class="nav-item active">
+                  
                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About </a>
+                  <a class="nav-link" href="about.html"> About Us </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="do.html"> What we do </a>
@@ -78,6 +127,8 @@
           </div>
         </nav>
       </div>
+      
+
     </header>
     <!-- end header section -->
     <!-- slider section -->
@@ -326,6 +377,7 @@ At Elite Excellence Academy, we empower learners of all ages to unlock their ful
 </section>
 
 
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
  
 
@@ -430,7 +482,9 @@ At Elite Excellence Academy, we empower learners of all ages to unlock their ful
               Informations
             </h5>
             <p>
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+             
+Elite Training Academy empowers individuals through professional programs tailored to the job market.
+We believe continuous learning is the key to excellence and real success.
             </p>
           </div>
         </div>
@@ -498,13 +552,12 @@ At Elite Excellence Academy, we empower learners of all ages to unlock their ful
             </form> -->
             <div class="social_box">
               <a href="https://www.facebook.com/share/1A2mE2Jxgf/?mibextid=wwXIfr">
-                <img src="images/faceccccc.jpg"   style="width: 3.5vw;height: 3.5vw;border-radius: 1vw;"alt="">
+                <img src="images/faceccccc.jpg"   style="width: 5vw;height: 5vw;border-radius: 1vw;"alt="">
               </a>
               <a href="https://www.instagram.com/elite.excellence.academy?igsh=MWk4d3hwbHEyYWE1bg%3D%3D&utm_source=qr">
-                <img src="images/inesta-removebg-preview.png" style="width: 7vw;height: 8vw;" alt="">
+                <img src="images/inesta-removebg-preview.png" style="width: 10vw;height: 10vw; margin-left: -1.5vw!important
+" alt="">
               </a>
-              
-            </div>
           </div>
         </div>
       </div>
