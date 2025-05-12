@@ -49,6 +49,58 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
               <ul class="navbar-nav  ">
+  <!-- عنصر الترجمة -->
+  <div class="lang-switch-wrapper">
+    <button class="lang-icon-btn" onclick="toggleLangMenu()"  style="background-color: #3a0243;
+      margin-top: 1.2vw;">🌐</button>
+    <ul id="langMenu" class="lang-menu hidden">
+      <li onclick="changeLanguage('en')" style="
+      color: #ffff;
+  ">🇺🇸 English</li>
+      <li onclick="changeLanguage('ar')" style="
+      color: #ffff;
+  ">🇸🇦 العربية</li>
+      <!-- <li onclick="changeLanguage('fr')">🇫🇷 Français</li> -->
+    </ul>
+  </div>
+  
+  <!-- Google Translate -->
+  <div id="google_translate_element" style="opacity: 0; height: 0; overflow: hidden;"></div>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+    }
+  
+    function changeLanguage(lang) {
+      const select = document.querySelector("select.goog-te-combo");
+      if (select) {
+        select.value = lang;
+        select.dispatchEvent(new Event("change"));
+      }
+    }
+  
+    function toggleLangMenu() {
+      document.getElementById("langMenu").classList.toggle("hidden");
+    }
+  
+    // إغلاق القائمة عند الضغط خارجها
+    document.addEventListener("click", function (e) {
+      const menu = document.getElementById("langMenu");
+      const btn = document.querySelector(".lang-icon-btn");
+      if (!menu.contains(e.target) && !btn.contains(e.target)) {
+        menu.classList.add("hidden");
+      }
+    });
+  </script>
+  
+  <!-- CSS الضروري -->
+  <style>
+    .lang-menu.hidden {
+      display: none;
+    }
+  </style>
                 <li class="nav-item active">
                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
